@@ -2,19 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:org.msp.meme9gag" x:Class="Meme9gag.Meme9gagPage">
     <Grid Padding="10,20,10,10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Label
             Text="9gag 밈 생성기"
             HorizontalTextAlignment="Center"
             FontSize="20"/>
-        <Image
-            x:Name="image"
-            Grid.Row="1"
-            BackgroundColor="#F0F0F0"/>
+        <Grid
+            Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image
+                x:Name="image"
+                BackgroundColor="#F0F0F0"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Entry />
+                <Entry
+                    Grid.Row="2"/>
+            </Grid>
+        </Grid>
         <Button
             Text="사진 찍기"
             BackgroundColor="Lime"
