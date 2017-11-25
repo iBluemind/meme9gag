@@ -19,12 +19,10 @@ namespace Meme9gag
             }
             var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
             {
-                Directory = "Sample",
-                Name = "test.jpg"
+                SaveToAlbum = true
             });
             if (file == null)
                 return;
-
             image.Source = ImageSource.FromStream(() =>
             {
                 var stream = file.GetStream();
@@ -37,6 +35,7 @@ namespace Meme9gag
         {
             var file = await CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
             {
+                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
             });
             if (file == null)
                 return;

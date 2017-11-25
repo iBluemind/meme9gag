@@ -16,7 +16,7 @@ namespace Meme9gag.Droid
             {
                 Control.SetBackgroundColor(global::Android.Graphics.Color.Transparent);
                 Control.SetTextColor(global::Android.Graphics.Color.White);
-                Control.SetShadowLayer(1.6f, 1, 1, global::Android.Graphics.Color.Black);
+                Control.SetShadowLayer(6, 0, 0, global::Android.Graphics.Color.Black);
             }
         }
     }

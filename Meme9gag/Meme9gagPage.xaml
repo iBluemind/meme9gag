@@ -23,7 +23,7 @@
             </Grid.RowDefinitions>
             <Image
                 x:Name="image"
-                BackgroundColor="#F0F0F0"/>
+                BackgroundColor="#FFFFFF"/>
             <Grid
                 Padding="10,40,10,30">
                 <Grid.RowDefinitions>
