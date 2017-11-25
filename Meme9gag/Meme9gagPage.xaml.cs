@@ -48,4 +48,8 @@ namespace Meme9gag
             });
         }
     }
+
+    public class CustomEntry : Entry
+    {
+    }
 }
